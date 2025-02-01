@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+  }
+  .edit{
+    margin-right: 305px;
+  }
+  
+  .edit-student-container {
+    background-image: url('https://www.w3schools.com/w3images/workbench.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding-top: 50px;
+    position: relative;
+    color: #fff;
+  }
+  
+  /* Overlay */
+  .edit-student-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  /* Header */
+  .edit-student-container h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .edit-student-container .btn {
+    border-radius: 5px;
+  }
+  
+  /* Form Styling */
+  .edit-student-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .edit-student-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .edit-student-form input:focus {
+    border-color: #2980b9;
+    outline: none;
+  }
+  
+  .edit-student-form input[type="submit"] {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-student-form input[type="submit"]:hover {
+    background-color: #1e68a5;
+  }
+  
+  .edit-student-form input[disabled] {
+    background-color: #f0f0f0;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .edit-student-container h2,
+  .edit-student-form {
+    animation: fadeInUp 0.6s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .edit-student-form {
+      padding: 30px;
+    }
+  
+    .edit-student-container {
+      padding-top: 30px;
+    }
+  }
+  

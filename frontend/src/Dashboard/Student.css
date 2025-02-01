@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+  }
+  .student{
+    margin-left: 100px;
+  }
+  
+  .student-container {
+    background-image: url('https://www.w3schools.com/w3images/workbench.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 50px;
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Overlay for the background */
+  .student-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Darken the background */
+    z-index: -1;
+  }
+  
+  /* Header Section */
+  .student-container .text-start h2 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .student-container .text-end .btn {
+    border-radius: 5px;
+  }
+  
+  /* Table Styling */
+  .student-table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .student-table th,
+  .student-table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .student-table thead {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  .student-table tbody tr {
+    transition: transform 0.3s ease;
+  }
+  
+  .student-table tbody tr:hover {
+    transform: translateY(-5px);
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Action Links Styling */
+  .student-table .text-info,
+  .student-table .text-danger {
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .student-table .text-info:hover {
+    color: #17a2b8;
+  }
+  
+  .student-table .text-danger:hover {
+    color: #e74c3c;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .student-container h2,
+  .student-table {
+    animation: fadeInUp 0.6s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .student-container {
+      padding-top: 30px;
+    }
+  
+    .student-table {
+      font-size: 14px;
+    }
+  }
+  
